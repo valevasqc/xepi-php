@@ -13,7 +13,7 @@
       <?php
       // (B) GET IMAGES IN GALLERY FOLDER
       $dir = __DIR__ . DIRECTORY_SEPARATOR . "gallery" . DIRECTORY_SEPARATOR;
-      $images = glob("$dir*.{jpg,jpeg,gif,png,bmp,webp}", GLOB_BRACE);
+      $images = glob("$dir*.{jpg,jpeg,gif,png,bmp,webp,heic}", GLOB_BRACE);
 
       // (C) OUTPUT IMAGES
       foreach ($images as $i) {
