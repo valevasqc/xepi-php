@@ -4,8 +4,8 @@
     <title>Very Simple PHP gallery</title>
 
     <!-- (A) CSS & JS -->
-    <link href="Library/CloudStorage/OneDrive-ufm.edu/060 Interests/Programming/Flutter/Flutter apps/catalogo_xepi/php test/gallery.css" rel="stylesheet">
-    <script src="Library/CloudStorage/OneDrive-ufm.edu/060 Interests/Programming/Flutter/Flutter apps/catalogo_xepi/php test/gallery.js"></script>
+    <link href="./gallery.css" rel="stylesheet">
+    <script src="./gallery.js"></script>
   </head>
   <body>
     <div class="gallery">
