@@ -1,0 +1,45 @@
+<html>
+<head> 
+<title> TEST </title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    var dir = "./gallery/";
+    var fileextension = ".jpg";
+$(document).ready(function(){
+    $.ajax({
+        url: dir,
+        success: function (data) {
+            $(data).find("a:contains(" + fileextension + ")").each(function () {
+                var filename = this.href.replace("http://localhost/xepi/php/", "");
+                console.log(filename);
+                $("div").append("<img src='" + dir + filename + "'>");
+            });
+        }
+    });
+});
+
+// window.addEventListener("DOMContentLoaded", () => {
+//   // (A) GET ALL IMAGES
+  
+//   var all = document.querySelectorAll("img");
+//   console.log(all);
+//   // (B) CLICK ON IMAGE TO TOGGLE FULLSCREEN
+//   if (all.length>0) { for (let img of all) {
+//     img.onclick = () => { img.classList.toggle("full"); };
+//   }}
+// });
+</script>
+<script src="gallery.js"> </script> 
+<link href="gallery.css" rel="stylesheet">
+</head> 
+
+<body> 
+<div class="gallery" id="gallery"> 
+
+
+</div>
+
+</body>
+
+</html>
